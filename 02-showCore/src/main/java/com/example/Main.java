@@ -6,6 +6,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import com.example.documentation.BeanConstructorInjection;
 import com.example.documentation.BeanDeclaredByAnnotation;
 import com.example.documentation.BeanDeclaredInAppConfig;
+import com.example.documentation.BeanPostConstructPreDestroy;
+import com.example.documentation.BeanPropertyInjection;
 
 public class Main {
 	public static void main(String[] args) {
@@ -25,11 +27,11 @@ public class Main {
 		beanConstructorInjection.sayHello();
 		
 //		// showcasing property injection
-//		BeanPropertyInjection beanPropertyInjection = applicationContext.getBean(BeanPropertyInjection.class);
-//		beanPropertyInjection.sayHello();
+		BeanPropertyInjection beanPropertyInjection = applicationContext.getBean(BeanPropertyInjection.class);
+		beanPropertyInjection.sayHello();
+		
 //		// showcasing PreConstruct / PostDestroy hooks
-//		BeanPostConstructPreDestroy beanPostConstructPreDestroy = applicationContext
-//				.getBean(BeanPostConstructPreDestroy.class);
-//		beanPostConstructPreDestroy.sayHello();
+		BeanPostConstructPreDestroy beanPostConstructPreDestroy = applicationContext.getBean(BeanPostConstructPreDestroy.class);
+		beanPostConstructPreDestroy.sayHello();
 	}
 }
