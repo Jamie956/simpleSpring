@@ -1,4 +1,4 @@
-package come.example;
+package com.example;
 
 public class Employee {
 	private String name;	
