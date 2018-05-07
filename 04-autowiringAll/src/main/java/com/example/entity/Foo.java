@@ -29,4 +29,9 @@ public class Foo {
 		this.errorMessage = errorMessage;
 	}
 
+	@Override
+	public String toString() {
+		return "Foo [name=" + name + ", emailAddress=" + emailAddress + ", errorMessage=" + errorMessage + "]";
+	}
+
 }
