@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>17-annotationBeans</artifactId>
+	<artifactId>01-annotationBean</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>17-annotationBeans</name>
+	<name>01-annotationBean</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>

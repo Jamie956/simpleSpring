@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>01-start</artifactId>
+	<artifactId>01-xmlBean</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>01-start</name>
+	<name>01-xmlBean</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
