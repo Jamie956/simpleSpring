@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>17-autowiring</artifactId>
+	<artifactId>17-annotationBeans</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>17-autowiring</name>
+	<name>17-annotationBeans</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
