@@ -3,11 +3,9 @@ package com.example.entity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component // The annotation that specifies to include this as a bean
-// in the ApplicationContext
+@Component
 public class Book {
-	@Autowired // The annotation that wires the below defined Author
-	// instance into this bean
+	@Autowired
 	private Author author;
 	private String title = "It";
 

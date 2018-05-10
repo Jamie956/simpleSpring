@@ -2,8 +2,7 @@ package com.example.entity;
 
 import org.springframework.stereotype.Component;
 
-@Component // The annotation that specifies to include
-// this as a bean in the ApplicationContext
+@Component
 public class Author {
 	private String firstName = "Steven";
 	private String lastName = "King";

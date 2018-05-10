@@ -10,7 +10,6 @@ public class ObjectFactory {
 		try {
 			props.load(ObjectFactory.class.getClassLoader().getResourceAsStream("com//example//common//app.properties"));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -21,13 +20,10 @@ public class ObjectFactory {
 		try {
 			obj = Class.forName(originalclassName).newInstance();
 		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return obj;
