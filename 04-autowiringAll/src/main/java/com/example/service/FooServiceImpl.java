@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.Validator.FooValidator;
 import com.example.entity.Foo;
+import com.example.validator.FooValidator;
 
 @Service
 public class FooServiceImpl implements FooService {

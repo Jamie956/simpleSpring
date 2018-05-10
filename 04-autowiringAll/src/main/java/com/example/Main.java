@@ -1,17 +1,17 @@
-package com.example.test;
+package com.example;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.example.AppConfig;
 import com.example.entity.Foo;
 import com.example.service.FooServiceImpl;
 
-public class ValidatorTest {
+public class Main {
 	public static void main(String[] args) {
-		ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
+		context.scan("com.example");
+		context.refresh();
 		
-		FooServiceImpl fooService = applicationContext.getBean(FooServiceImpl.class);
+		FooServiceImpl fooService = context.getBean(FooServiceImpl.class);
 		
 		Foo foo = new Foo();
 		foo.setName("fooname");

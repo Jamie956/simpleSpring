@@ -1,4 +1,4 @@
-package com.example.Validator;
+package com.example.validator;
 
 import com.example.entity.Foo;
 
