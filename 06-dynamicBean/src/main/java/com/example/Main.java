@@ -4,9 +4,9 @@ import org.springframework.beans.factory.FactoryBean;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 
-public class SomeTest {
+public class Main {
 	public static void main(String[] args) {
-		AbstractApplicationContext context = new AnnotationConfigApplicationContext(ExampleConfig.class);
+		AbstractApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 		String exampleString = (String) context.getBean("fromFactory");
 		System.out.println(exampleString);
 		
