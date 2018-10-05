@@ -5,7 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class App {
 	public static void main(String[] args) {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-		context.scan("com.example");
+		context.scan("com.example.v1");
 		context.refresh();
 		
 		Book book = context.getBean(Book.class);
