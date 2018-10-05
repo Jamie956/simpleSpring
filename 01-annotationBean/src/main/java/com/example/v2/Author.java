@@ -1,4 +1,4 @@
-package com.example.entity;
+package com.example.v2;
 
 public class Author {
 	private String firstName;

@@ -1,10 +1,7 @@
-package com.example;
+package com.example.v2;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import com.example.entity.Author;
-import com.example.entity.Book;
 
 @Configuration
 public class AppConfig {

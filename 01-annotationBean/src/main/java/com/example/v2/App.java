@@ -1,11 +1,11 @@
-package com.example;
+package com.example.v2;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.example.entity.Author;
-import com.example.entity.Book;
+import com.example.v1.Author;
+import com.example.v1.Book;
 
-public class Main {
+public class App {
 	public static void main(String[] args) {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 		

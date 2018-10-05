@@ -1,6 +1,6 @@
 package com.example;
 
-public class Employee {
+public class User {
 	private String name;	
 
 	public String getName() {
@@ -9,9 +9,5 @@ public class Employee {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public void displayName() {
-		System.out.println(name);
 	}
 }

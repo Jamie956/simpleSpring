@@ -1,8 +1,6 @@
-package com.example;
+package com.example.v1;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import com.example.entity.Book;
 
 public class App {
 	public static void main(String[] args) {
