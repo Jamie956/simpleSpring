@@ -12,8 +12,6 @@ public class ItemController {
 	private ItemService itemService;
 	
 	public ItemController() {
-		super();
-		System.out.println("ItemController constructor");
 	}
 	
 	public void doSomething() {

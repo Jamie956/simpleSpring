@@ -13,10 +13,10 @@ public class Main {
 		OrderController orderController = context.getBean(OrderController.class);
 		orderController.doSomething();
 		
-		ItemController itemController = context.getBean(ItemController.class);
-		itemController.doSomething();
-		
-		UserController userController = context.getBean(UserController.class);
-		userController.doSomething();
+//		ItemController itemController = context.getBean(ItemController.class);
+//		itemController.doSomething();
+//		
+//		UserController userController = context.getBean(UserController.class);
+//		userController.doSomething();
 	}
 }
