@@ -4,8 +4,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Author {
-	private String firstName = "Steven";
-	private String lastName = "King";
+	private String firstName = "Jamie";
+	private String lastName = "Zhou";
 
 	public String getFirstName() {
 		return firstName;
@@ -13,6 +13,11 @@ public class Author {
 
 	public String getLastName() {
 		return lastName;
+	}
+
+	@Override
+	public String toString() {
+		return "Author [firstName=" + firstName + ", lastName=" + lastName + "]";
 	}
 
 }

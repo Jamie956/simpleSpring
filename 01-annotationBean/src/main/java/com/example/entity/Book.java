@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public class Book {
 	@Autowired
 	private Author author;
-	private String title = "It";
+	private String title = "Thinking in Java";
 
 	public Author getAuthor() {
 		return author;
@@ -16,4 +16,10 @@ public class Book {
 	public String getTitle() {
 		return title;
 	}
+
+	@Override
+	public String toString() {
+		return "Book [author=" + author + ", title=" + title + "]";
+	}
+	
 }
