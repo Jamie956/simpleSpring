@@ -25,13 +25,3 @@ bean.property.value
 2. new ClassPathXmlApplicationContext()
 3. getBean(String) 根据方法名获取bean
 
-
-
-
-
-
-
-
-
-
-
