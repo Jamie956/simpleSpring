@@ -1,18 +1,18 @@
 package com.example;
 
-public class MyBean {
-
-	public MyBean() {
+public class Item {
+	public Item() {
 		super();
-		// TODO Auto-generated constructor stub
-		System.out.println("MyBean constructor");
+		System.out.println("Item cons");
 	}
+
 	private String name;
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	
 }

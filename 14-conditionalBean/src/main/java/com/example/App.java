@@ -2,9 +2,12 @@ package com.example;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class Main {
+public class App {
 	public static void main(String[] args) {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MyAppConfig.class);
-		context.getBean("myBean");
+		
+		context.getBean("itemBean");
+		
+		context.close();
 	}
 }

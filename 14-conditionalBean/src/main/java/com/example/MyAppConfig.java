@@ -7,8 +7,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MyAppConfig {
 	@Bean
-	@Conditional(PropertyCondition.class)
-	public MyBean myBean() {
-		return new MyBean();
+	@Conditional(IsActive.class)
+	public Item itemBean() {
+		return new Item();
 	}
 }
