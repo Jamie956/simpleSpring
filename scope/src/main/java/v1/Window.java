@@ -1,4 +1,4 @@
-package com.example;
+package v1;
 
 public class Window {
 	public Window() {
