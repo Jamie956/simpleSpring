@@ -1,5 +1,5 @@
 package v1;
 
 public abstract class WindowGenerator {
-	protected abstract Window createNewWindow(); // lookup method
+	protected abstract Window createWindow(); // lookup method
 }
