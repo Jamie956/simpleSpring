@@ -5,15 +5,16 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
 
 @Configuration
-public class SingletonConfiguration {
+public class MyConfig {
 	@Bean
-	public MyBean singletonBean() {
-		return new MyBean("singleton");
+	public Book bookBean() {
+		return new Book("Java");
 	}
 
+	// @Lazy 表示在getBean时才去实例化
 	@Bean
 	@Lazy
-	public MyBean lazySingletonBean() {
-		return new MyBean("lazy singleton");
+	public Book bookBeanLazy() {
+		return new Book("JS");
 	}
 }
