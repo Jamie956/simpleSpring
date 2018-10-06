@@ -1,4 +1,4 @@
-package v5;
+package com.example.v8;
 
 public class Book {
 	private String name;
