@@ -6,7 +6,6 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
 
 public class IsActive implements Condition {
 	public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
-//		return context.getEnvironment().getProperty("spring.profiles.active") != null;
 		return true;
 	}
 }
