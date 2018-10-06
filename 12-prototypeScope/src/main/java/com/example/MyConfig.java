@@ -5,10 +5,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
 @Configuration
-public class PrototypeConfiguration {
+public class MyConfig {
 	@Bean
 	@Scope("prototype")
-	public MyBean prototypeBean() {
-		return new MyBean("prototype");
+	public User userBean() {
+		return new User("tom");
 	}
 }
