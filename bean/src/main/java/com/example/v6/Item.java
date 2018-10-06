@@ -1,4 +1,4 @@
-package com.example.v1;
+package com.example.v6;
 
 public class Item {
 	public Item() {

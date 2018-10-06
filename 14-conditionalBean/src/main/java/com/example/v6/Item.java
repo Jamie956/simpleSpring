@@ -1,10 +1,5 @@
-package com.example.v2;
+package com.example.v6;
 
-import org.springframework.context.annotation.Conditional;
-import org.springframework.stereotype.Component;
-
-@Component
-@Conditional(IsActive.class)
 public class Item {
 	public Item() {
 		super();
