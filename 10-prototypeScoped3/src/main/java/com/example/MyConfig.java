@@ -7,20 +7,20 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 
 @Configuration
-public class MyConfiguration {
+public class MyConfig {
 	@Bean
 	@Lazy
 	@Scope(scopeName = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
-	public Window window() {
+	public Window windowBean() {
 		return new Window();
 	}
 
 	@Bean
-	public WindowGenerator windowGenerator() {
+	public WindowGenerator windowGeneratorBean() {
 		return new WindowGenerator() {
 			@Override
-			protected Window createNewWindow() {
-				return window();
+			protected Window newWindow() {
+				return windowBean();
 			}
 		};
 	}
