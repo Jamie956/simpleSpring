@@ -1,11 +1,11 @@
-package com.example;
+package com.example.v2;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class MyAppConfig {
+public class MyConfig {
 	@Bean
 	@Conditional(IsActive.class)
 	public Item itemBean() {

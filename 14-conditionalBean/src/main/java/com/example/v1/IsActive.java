@@ -1,4 +1,4 @@
-package com.example;
+package com.example.v1;
 
 import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;
