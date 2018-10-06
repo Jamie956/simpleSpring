@@ -1,4 +1,4 @@
-package com.example;
+package v2;
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
@@ -8,14 +8,13 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 
 @Configuration
-@ComponentScan("com.example")
-public class MyConfiguration {
-	
+@ComponentScan("v2")
+public class MyConfig {
 	@Bean
 	@Lazy
 	@Scope(scopeName = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
-	public Window window() {
+	public Window windowBean() {
 		return new Window();
 	}
-	
+
 }
