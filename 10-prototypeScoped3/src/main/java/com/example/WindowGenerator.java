@@ -5,6 +5,6 @@ public abstract class WindowGenerator {
 		Window window = createNewWindow();// new instance for each call
 		return window;
 	}
-	
+
 	protected abstract Window createNewWindow();// lookup method
 }

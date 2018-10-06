@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class MyConfiguration {
-	
 	@Bean
 	@Lazy
 	@Scope(scopeName = ConfigurableBeanFactory.SCOPE_PROTOTYPE)

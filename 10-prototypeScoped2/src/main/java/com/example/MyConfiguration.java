@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 
 @Configuration
-@ComponentScan("com.example") // package where WindowGenerator is located
+@ComponentScan("com.example")
 public class MyConfiguration {
 	
 	@Bean
@@ -17,4 +17,5 @@ public class MyConfiguration {
 	public Window window() {
 		return new Window();
 	}
+	
 }
