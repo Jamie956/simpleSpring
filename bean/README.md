@@ -1,5 +1,3 @@
-# Spring
-
 ## ApplicationContext
 
 ### Annotation
@@ -25,7 +23,7 @@ bean.property.value
 2. new ClassPathXmlApplicationContext()
 3. getBean(String) 根据方法名获取bean
 
-  
+
 ##  Autowired
 
 ### 三种方式定义
@@ -63,13 +61,13 @@ bean.property.value
     for (Bean bean : beans) { 
       bean.sayhi(); 
     } 
-```    
+```
 
 
 
 
 
-
+# =================================
 
 
 
