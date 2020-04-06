@@ -5,13 +5,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class App {
 	public static void main(String[] args) {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-		context.scan("com.example");
+		context.scan("com.example.v5");
 		context.refresh();
-
-		AnimalService animalService = context.getBean(AnimalService.class);
-
-		animalService.printCat();
-		animalService.printDog();
+		
+		context.getBean(Item.class);
 		
 		context.close();
 	}
