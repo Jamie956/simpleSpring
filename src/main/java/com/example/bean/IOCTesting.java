@@ -46,6 +46,6 @@ public class IOCTesting {
     }
 
     public static void main(String[] args) {
-        test4();
+        test1();
     }
 }
