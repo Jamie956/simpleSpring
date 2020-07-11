@@ -16,8 +16,8 @@ public class Test {
      * AOP Auto Proxy
      */
     public static void test2() {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("aop-auto-proxy.xml");
-        IHalo halo = (IHalo) context.getBean("haloTarget");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("aop-monitor.xml");
+        IHalo halo = (IHalo) context.getBean("haloProxy");
         halo.greeting();
     }
 
