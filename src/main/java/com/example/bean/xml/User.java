@@ -1,4 +1,4 @@
-package com.example.bean;
+package com.example.bean.xml;
 
 public class User {
 	private String name;	

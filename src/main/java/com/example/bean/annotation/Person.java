@@ -1,4 +1,4 @@
-package com.example.bean;
+package com.example.bean.annotation;
 
 public class Person {
 	public Person() {

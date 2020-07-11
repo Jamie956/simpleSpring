@@ -1,4 +1,4 @@
-package com.example.aop.proxy;
+package com.example.aop;
 
 public interface IHalo {
     void greeting();

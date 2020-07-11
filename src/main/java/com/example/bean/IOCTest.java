@@ -1,24 +1,17 @@
 package com.example.bean;
 
+import com.example.bean.annotation.AppConfig;
+import com.example.bean.annotation.Book;
+import com.example.bean.xml.User;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class IOCTesting {
-    //component annotation test
-    public static void test1() {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-        context.scan("com.example.bean");
-        context.refresh();
+public class IOCTest {
 
-        context.getBean(Student.class);
-
-        context.close();
-    }
-
-    //autowired inject dependency field
+    //component annotation and autowired inject dependency field
     public static void test2() {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-        context.scan("com.example.bean");
+        context.scan("com.example.bean.annotation");
         context.refresh();
 
         context.getBean(Book.class);
@@ -30,22 +23,22 @@ public class IOCTesting {
     public static void test3() {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
-        context.getBean("getPerson");
+        context.getBean("person");
 
         context.close();
     }
 
     //IOC - base XML
     public static void test4(){
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("ioc-bean.xml");
 
-        User user = (User) context.getBean("userBean");
+        User user = (User) context.getBean("user");
         user.show();
 
         context.close();
     }
 
     public static void main(String[] args) {
-        test1();
+        test4();
     }
 }

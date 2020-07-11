@@ -3,7 +3,7 @@ package com.example.bean.life;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 
-public class MyBeanPostProcessor implements BeanPostProcessor {
+public class Processor implements BeanPostProcessor {
 
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
         // TODO Auto-generated method stub

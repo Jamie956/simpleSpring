@@ -6,24 +6,24 @@
            ">
 
     <!-- 增强advice，增强方法advice的 bean -->
-    <bean id="greetingAdvice" class="com.example.aop.proxy.GreetingAdvice"/>
+    <bean id="haloAdvice" class="com.example.aop.HaloAdvice"/>
     <!-- 代理类target，被增强方法所在类的 bean-->
-    <bean id="halo" class="com.example.aop.proxy.Halo"/>
+    <bean id="haloTarget" class="com.example.aop.Halo"/>
 
     <!-- 切点pointcut，匹配所有的greeting方法-->
-    <bean id="greetingPointcut" class="org.springframework.aop.support.JdkRegexpMethodPointcut">
+    <bean id="haloPointcut" class="org.springframework.aop.support.JdkRegexpMethodPointcut">
         <property name="pattern" value=".*greeting"></property>
     </bean>
 
     <!-- 切面aspect，注入advice和pointcut，将切点增强 -->
     <bean id="greetingInterceptor" class="org.springframework.aop.support.DefaultPointcutAdvisor">
-        <property name="advice" ref="greetingAdvice"/>
-        <property name="pointcut" ref="greetingPointcut"/>
+        <property name="advice" ref="haloAdvice"/>
+        <property name="pointcut" ref="haloPointcut"/>
     </bean>
 
     <!-- 代理工厂，注入代理类target和拦截器interceptor -->
     <bean id="haloProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
-        <property name="target" ref="halo"/>
+        <property name="target" ref="haloTarget"/>
         <property name="interceptorNames" value="greetingInterceptor"/>
     </bean>
 </beans>
